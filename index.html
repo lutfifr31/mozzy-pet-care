@@ -4,102 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mozzy Pet Care - Hotel & Penitipan Kucing Premium</title>
-  <link href="./dist/output.css" rel="stylesheet">
-  <!-- Menambahkan Font Google (Inter) agar terlihat lebih profesional seperti di video -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2048%2048%27%3E%3Crect%20width%3D%2748%27%20height%3D%2748%27%20rx%3D%2712%27%20fill%3D%27%2310b981%27/%3E%3Cpath%20d%3D%27M12%2011l7%206q5-1.5%2010%200l7-6q2%200%202%202v12q0%2012-14%2012T10%2025V13q0-2%202-2z%27%20fill%3D%27white%27/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
-    /* Style khusus untuk menghilangkan panah default di FAQ */
     details > summary { list-style: none; }
     details > summary::-webkit-details-marker { display: none; }
   </style>
 </head>
 <body class="bg-white text-slate-800 antialiased overflow-x-hidden">
-
-  <!-- Navbar (Fixed, Putih Bersih) -->
-  <nav class="fixed w-full top-0 z-50 bg-white border-b border-slate-200 py-4 px-6 md:px-12 flex justify-between items-center">
-    <div class="flex items-center gap-2">
-      <span class="text-3xl text-emerald-500">🛡️</span>
-      <h1 class="text-xl font-bold text-slate-900 tracking-tight">Mozzy<span class="font-normal text-slate-500">Care</span></h1>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#059669"/></linearGradient>
+<symbol id="logo-mark" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="url(#lg)"/><path d="M12 11l7 6q5-1.5 10 0l7-6q2 0 2 2v12q0 12-14 12T10 25V13q0-2 2-2z" fill="#fff"/><ellipse cx="18.5" cy="23" rx="1.9" ry="2.5" fill="#059669"/><ellipse cx="29.5" cy="23" rx="1.9" ry="2.5" fill="#059669"/><path d="M24 33.5l-3.4-3.3a2 2 0 013-2.7l.4.4.4-.4a2 2 0 013 2.7z" fill="#059669"/></symbol>
+<g id="cat"><path d="M262 220c46 0 62-34 42-62" stroke="#E08A3C" stroke-width="16" stroke-linecap="round" fill="none"/><ellipse cx="200" cy="205" rx="60" ry="48" fill="#F4A259"/><ellipse cx="200" cy="218" rx="32" ry="30" fill="#FFF1E0"/><ellipse cx="176" cy="250" rx="17" ry="8" fill="#FFF1E0"/><ellipse cx="224" cy="250" rx="17" ry="8" fill="#FFF1E0"/><path d="M152 104l4-48 36 24zM248 104l-4-48-36 24z" fill="#F4A259"/><path d="M161 90l3-22 15 11zM239 90l-3-22-15 11z" fill="#F9B8B0"/><ellipse cx="200" cy="122" rx="54" ry="46" fill="#F4A259"/><path d="M192 80v13m8-15v15m8-13v13" stroke="#E08A3C" stroke-width="5" stroke-linecap="round"/><ellipse cx="200" cy="140" rx="26" ry="19" fill="#FFF1E0"/></g>
+<g id="nw"><path d="M194 132h12l-6 7z" fill="#E58A8A"/><path d="M150 134H124M150 143L126 151M250 134H276M250 143L274 151" stroke="#5b3a1e" stroke-opacity=".45" stroke-width="2" stroke-linecap="round"/></g>
+</defs></svg>
+ 
+ 
+  <!-- Navbar -->
+  <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 py-4 px-6 md:px-12 flex justify-between items-center shadow-sm">
+    <a href="#" class="flex items-center gap-3" aria-label="Mozzy Care"><svg class="w-10 h-10 shrink-0" aria-hidden="true"><use href="#logo-mark"/></svg><span class="leading-none"><span class="block text-xl font-extrabold tracking-tight text-slate-900">Mozzy<span class="text-emerald-600">Care</span></span><span class="block text-[10px] font-semibold tracking-[0.2em] uppercase mt-1.5 text-slate-400">Cat Hotel &amp; Boarding</span></span></a>
+    <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+      <a href="#kenapa-kami" class="hover:text-emerald-500 transition-colors">Kenapa Kami</a>
+      <a href="#harga" class="hover:text-emerald-500 transition-colors">Harga</a>
+      <a href="#syarat" class="hover:text-emerald-500 transition-colors">Syarat</a>
+      <a href="#faq" class="hover:text-emerald-500 transition-colors">FAQ</a>
     </div>
-    <ul class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
-      <li><a href="#kenapa-kami" class="hover:text-emerald-500 transition-colors">Kenapa Kami</a></li>
-      <li><a href="#harga" class="hover:text-emerald-500 transition-colors">Harga</a></li>
-      <li><a href="#syarat" class="hover:text-emerald-500 transition-colors">Syarat</a></li>
-      <li><a href="#faq" class="hover:text-emerald-500 transition-colors">FAQ</a></li>
-    </ul>
-    <a href="#booking" class="bg-emerald-500 text-white px-5 py-2 rounded-lg font-semibold text-sm hover:bg-emerald-600 transition-colors flex items-center gap-2">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+    <a href="https://wa.me/" data-wa target="_blank" rel="noopener" class="bg-emerald-500 text-white px-5 py-2 rounded-lg font-semibold text-sm hover:bg-emerald-600 transition-colors shadow-sm">
       Booking
     </a>
   </nav>
-
+ 
   <!-- Hero Section -->
-  <section class="pt-32 pb-16 px-6 md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+  <header class="pt-36 pb-20 px-6 md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
     <div class="flex-1 w-full text-center md:text-left">
-      <h2 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tight">
         Fasilitas aman, <br>
         <span class="text-emerald-500">tanpa was-was.</span>
-      </h2>
+      </h1>
       <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
         Setiap anabul mendapat pengawasan harian, 1 kamar 1 ekor, dan nol kontak silang. Kucingmu layaknya keluarga sendiri, bukan sekadar dititipin.
       </p>
       
       <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-10">
-        <a href="#booking" class="bg-emerald-500 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-emerald-600 transition-colors flex items-center justify-center gap-2">
-          <span>Booking via WhatsApp</span>
+        <a href="https://wa.me/" data-wa target="_blank" rel="noopener" class="bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-emerald-600 transition-colors shadow-lg shadow-emerald-500/20 text-center">
+          Booking via WhatsApp
         </a>
-        <a href="#harga" class="bg-white text-emerald-600 border border-emerald-200 px-8 py-3.5 rounded-lg font-bold hover:bg-emerald-50 transition-colors text-center">
+        <a href="#harga" class="bg-white text-emerald-600 border-2 border-emerald-200 px-8 py-4 rounded-xl font-bold hover:bg-emerald-50 transition-colors text-center">
           Lihat harga & paket
         </a>
       </div>
-
-      <!-- Features Checklist (Seperti di video) -->
-      <div class="flex flex-wrap gap-x-6 gap-y-3 justify-center md:justify-start text-sm text-slate-600 font-medium">
-        <div class="flex items-center gap-2"><span class="text-emerald-500">✓</span> Diawasi ahli</div>
-        <div class="flex items-center gap-2"><span class="text-emerald-500">✓</span> 1 kamar 1 kucing</div>
-        <div class="flex items-center gap-2"><span class="text-emerald-500">✓</span> Update foto/video harian</div>
+ 
+      <div class="flex flex-wrap gap-x-6 gap-y-3 justify-center md:justify-start text-sm text-slate-600 font-semibold">
+        <div class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Diawasi ahli</div>
+        <div class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> 1 kamar 1 kucing</div>
+        <div class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Update foto/video harian</div>
       </div>
     </div>
     
     <div class="flex-1 w-full">
-      <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fasilitas Mozzy Care" class="rounded-3xl shadow-xl w-full object-cover h-[450px]">
+      <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kucing nyaman di kamar Mozzy Care" class="rounded-3xl shadow-2xl w-full h-[450px]"><rect width="400" height="320" fill="#ECFDF5"/><rect x="272" y="40" width="92" height="106" rx="8" fill="#BAE6FD" stroke="#fff" stroke-width="8"/><path d="M318 40v106M272 93h92" stroke="#fff" stroke-width="5"/><circle cx="296" cy="66" r="10" fill="#FDE68A"/><rect y="276" width="400" height="44" fill="#A7F3D0"/><ellipse cx="200" cy="278" rx="118" ry="16" fill="#34D399"/><path d="M92 120c-10-12-26 2-14 14l14 12 14-12c12-12-4-26-14-14z" fill="#FDA4AF"/><g transform="translate(-30 -20) scale(1.15)"><use href="#cat"/><use href="#nw"/><path d="M176 118q8-9 16 0M208 118q8-9 16 0" stroke="#5b3a1e" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M200 139q-5 8-12 4M200 139q5 8 12 4" stroke="#5b3a1e" stroke-width="3" fill="none" stroke-linecap="round"/></g></svg>
     </div>
-  </section>
-
-  <!-- Problem Section (Tempat Kosong) -->
-  <section class="py-20 px-6 md:px-12 bg-slate-50 border-y border-slate-100 text-center">
-    <div class="max-w-5xl mx-auto">
-      <h4 class="text-slate-500 font-semibold tracking-wider text-sm mb-3 uppercase">Yang bikin kamu ragu nitip</h4>
-      <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Nitip anabul itu bukan cuma soal <br> ada tempat kosong</h3>
+  </header>
+ 
+  <!-- Problem Section -->
+  <section class="py-24 px-6 md:px-12 bg-slate-50 border-y border-slate-100 text-center">
+    <div class="max-w-6xl mx-auto">
+      <h4 class="text-slate-400 font-bold tracking-widest text-xs mb-3 uppercase">Yang bikin kamu ragu nitip</h4>
+      <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Nitip anabul itu bukan cuma soal <br class="hidden md:inline"> ada tempat kosong</h3>
       <p class="text-slate-600 max-w-2xl mx-auto mb-16">
         Kamu titip karena harus pergi — mudik, dinas, atau liburan. Tapi di kepala kamu muncul pertanyaan yang sama tiap kali.
       </p>
-
+ 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-        <!-- Problem 1 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100">
-          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Kucing Stres" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <span class="text-slate-400 font-bold text-sm">01</span>
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/60 hover:shadow-md transition-shadow">
+          <svg viewBox="0 0 400 228" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kucing stres" class="w-full h-52 block"><rect width="400" height="228" fill="#EDE9FE"/><rect y="200" width="400" height="28" fill="#DDD6FE"/><path d="M44 70q-14 14 0 28M60 58q-26 26 0 52M350 80q14 14 0 28M336 66q26 26 0 54" stroke="#A78BFA" stroke-width="5" fill="none" stroke-linecap="round"/><g transform="translate(30 -20) scale(.85)"><use href="#cat"/><use href="#nw"/><circle cx="178" cy="118" r="10" fill="#fff"/><circle cx="222" cy="118" r="10" fill="#fff"/><circle cx="180" cy="120" r="4.5" fill="#3b2412"/><circle cx="220" cy="120" r="4.5" fill="#3b2412"/><path d="M166 100q12-8 24 0M210 100q12-8 24 0" stroke="#5b3a1e" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M250 92q8 12 0 20q-8-8 0-20z" fill="#7DD3FC"/><path d="M188 148q6-6 12-1q6-5 12 1" stroke="#5b3a1e" stroke-width="3" fill="none" stroke-linecap="round"/></g></svg>
+          <div class="p-8">
+            <span class="text-slate-400 font-bold text-xs tracking-wider">01</span>
             <h5 class="text-lg font-bold text-slate-900 mt-2 mb-3">Takut anabul stres di tempat baru?</h5>
             <p class="text-slate-600 text-sm leading-relaxed">Kucing itu teritorial. Lingkungan baru, bau asing, suara ramai — semua bikin stres. Di kandang campur, stres itu makin parah.</p>
           </div>
         </div>
-        <!-- Problem 2 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100">
-          <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Kucing Sakit" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <span class="text-slate-400 font-bold text-sm">02</span>
+ 
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/60 hover:shadow-md transition-shadow">
+          <svg viewBox="0 0 400 228" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kucing bersin, bahaya virus" class="w-full h-52 block"><rect width="400" height="228" fill="#DCFCE7"/><rect y="200" width="400" height="28" fill="#BBF7D0"/><g fill="#86EFAC" stroke="#22C55E" stroke-width="4" stroke-dasharray="2 5"><circle cx="335" cy="60" r="9"/><circle cx="70" cy="150" r="7"/><circle cx="352" cy="140" r="6"/></g><g transform="translate(30 -20) scale(.85)"><use href="#cat"/><use href="#nw"/><path d="M168 111l16 7-16 7M232 111l-16 7 16 7" stroke="#5b3a1e" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="200" cy="149" rx="6" ry="7" fill="#7f1d1d"/><circle cx="238" cy="152" r="5" fill="#7DD3FC"/><circle cx="254" cy="160" r="4" fill="#7DD3FC"/><circle cx="268" cy="148" r="3" fill="#7DD3FC"/></g></svg>
+          <div class="p-8">
+            <span class="text-slate-400 font-bold text-xs tracking-wider">02</span>
             <h5 class="text-lg font-bold text-slate-900 mt-2 mb-3">Ngeri ketularan jamur, kutu, atau virus?</h5>
             <p class="text-slate-600 text-sm leading-relaxed">Satu ruangan ramai kucing = satu droplet bersin bisa nular ke semua. Ini ketakutan nomor satu pemilik kucing.</p>
           </div>
         </div>
-        <!-- Problem 3 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100">
-          <img src="https://images.unsplash.com/photo-1529778458776-4dc810444bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Kucing Kurus" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <span class="text-slate-400 font-bold text-sm">03</span>
+ 
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-200/60 hover:shadow-md transition-shadow">
+          <svg viewBox="0 0 400 228" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kucing sedih dengan mangkuk kosong" class="w-full h-52 block"><rect width="400" height="228" fill="#E0F2FE"/><rect y="200" width="400" height="28" fill="#BAE6FD"/><path d="M38 176h72l-8 22H46z" fill="#94A3B8"/><ellipse cx="74" cy="176" rx="36" ry="6" fill="#CBD5E1"/><g transform="translate(30 -20) scale(.85)"><use href="#cat"/><use href="#nw"/><ellipse cx="178" cy="119" rx="9" ry="11" fill="#fff"/><ellipse cx="222" cy="119" rx="9" ry="11" fill="#fff"/><circle cx="178" cy="122" r="6.5" fill="#3b2412"/><circle cx="222" cy="122" r="6.5" fill="#3b2412"/><circle cx="180" cy="119" r="2.2" fill="#fff"/><circle cx="224" cy="119" r="2.2" fill="#fff"/><path d="M166 108L188 101M234 108L212 101" stroke="#5b3a1e" stroke-width="4" stroke-linecap="round"/><path d="M168 134q5 8 0 12q-5-4 0-12z" fill="#7DD3FC"/><path d="M189 149q11-9 22 0" stroke="#5b3a1e" stroke-width="3" fill="none" stroke-linecap="round"/></g></svg>
+          <div class="p-8">
+            <span class="text-slate-400 font-bold text-xs tracking-wider">03</span>
             <h5 class="text-lg font-bold text-slate-900 mt-2 mb-3">Was-was kucingmu nggak keurus?</h5>
             <p class="text-slate-600 text-sm leading-relaxed">Sering dengar kasus kucing telantar di penitipan? Cuma titip sayang — dibiarkan lapar atau kotor di pojok kandang.</p>
           </div>
@@ -107,226 +107,199 @@
       </div>
     </div>
   </section>
-
-  <!-- Value Proposition (3 Hal Beda) -->
-  <section id="kenapa-kami" class="py-20 px-6 md:px-12 max-w-6xl mx-auto text-center">
-    <h4 class="text-slate-500 font-semibold tracking-wider text-sm mb-3 uppercase">Kenapa Mozzy Care</h4>
-    <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Tiga hal yang bikin kami beda</h3>
-    <p class="text-slate-600 mb-16">Bukan janji. Ini yang kami bangun ke dalam cara kerja dan bangunan kami.</p>
-
+ 
+  <!-- Value Proposition -->
+  <section id="kenapa-kami" class="py-24 px-6 md:px-12 max-w-6xl mx-auto text-center">
+    <h4 class="text-slate-400 font-bold tracking-widest text-xs mb-3 uppercase">Kenapa Mozzy Care</h4>
+    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Tiga hal yang bikin kami beda</h3>
+    <p class="text-slate-600 mb-16 max-w-xl mx-auto">Bukan janji. Ini yang kami bangun ke dalam cara kerja dan bangunan kami.</p>
+ 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-      <div>
-        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        </div>
-        <h5 class="text-xl font-bold text-slate-900 mb-3">Keamanan terjamin, bukan sekadar dititipin</h5>
+      <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100">
+        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center font-bold mb-6 text-xl">✓</div>
+        <h5 class="text-lg font-bold text-slate-900 mb-3">Keamanan terjamin, bukan sekadar dititipin</h5>
         <p class="text-slate-600 text-sm leading-relaxed">Sutan Lutfi merancang SOP ketat. Pengecekan kondisi tiap pagi dan sore. Ada protokol darurat kalau muncul gejala sakit.</p>
       </div>
-      <div>
-        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-6">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-        </div>
-        <h5 class="text-xl font-bold text-slate-900 mb-3">Satu kamar satu kucing, nol kontak silang</h5>
+      <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100">
+        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center font-bold mb-6 text-xl">✓</div>
+        <h5 class="text-lg font-bold text-slate-900 mb-3">Satu kamar satu kucing, nol kontak silang</h5>
         <p class="text-slate-600 text-sm leading-relaxed">Kucingmu punya ruang privasi. Sekat antar-unit solid (sneeze barrier) supaya bersin dan droplet nggak nyebrang ke tetangga.</p>
       </div>
-      <div>
-        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-full flex items-center justify-center mb-6">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path></svg>
-        </div>
-        <h5 class="text-xl font-bold text-slate-900 mb-3">Kamu bisa lihat sendiri, tiap hari</h5>
+      <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100">
+        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center font-bold mb-6 text-xl">✓</div>
+        <h5 class="text-lg font-bold text-slate-900 mb-3">Kamu bisa lihat sendiri, tiap hari</h5>
         <p class="text-slate-600 text-sm leading-relaxed">Update foto & video harian, plus opsi video call. Kamu nggak perlu nebak-nebak kabar anabulmu di sini.</p>
       </div>
     </div>
   </section>
-
-  <!-- Pricing Section (Harga) -->
-  <section id="harga" class="py-20 px-6 md:px-12 bg-slate-50 border-t border-slate-100 text-center">
-    <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Harga per malam, transparan</h3>
-    <p class="text-slate-600 mb-12">Sudah termasuk 1 kandang 1 ekor, AC, dan daily report.</p>
-
-    <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden">
-      <div class="p-10">
+ 
+  <!-- Pricing Section -->
+  <section id="harga" class="py-24 px-6 md:px-12 bg-slate-50 border-t border-slate-100 text-center">
+    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Harga per malam, transparan</h3>
+    <p class="text-slate-600 mb-16 max-w-xl mx-auto">Sudah termasuk 1 kandang 1 ekor, AC 24 jam, CCTV, dan daily report. Nginap > 7 malam? Dapat grooming gratis.</p>
+ 
+    <div class="max-w-xl mx-auto bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+      <div class="p-10 md:p-12">
         <h4 class="text-2xl font-bold text-slate-900 mb-2">Kamar Standar VIP</h4>
         <p class="text-slate-500 text-sm mb-8">Semua esensial, tanpa kompromi standar keamanan & kebersihan.</p>
         
-        <div class="grid grid-cols-2 gap-8 mb-8 border-b border-slate-100 pb-8">
+        <div class="grid grid-cols-2 gap-6 mb-8 border-y border-slate-100 py-8">
           <div>
-            <p class="text-slate-500 font-semibold mb-1 uppercase text-xs tracking-wider">Weekday</p>
-            <p class="text-4xl font-extrabold text-emerald-600">Rp50.000<span class="text-sm font-normal text-slate-400">/malam</span></p>
+            <p class="text-slate-400 font-semibold mb-2 uppercase text-xs tracking-wider">Weekday</p>
+            <p class="text-3xl md:text-4xl font-extrabold text-emerald-600">Rp50.000<span class="text-xs font-normal text-slate-400 block mt-1">/malam</span></p>
           </div>
           <div>
-            <p class="text-slate-500 font-semibold mb-1 uppercase text-xs tracking-wider">Weekend</p>
-            <p class="text-4xl font-extrabold text-emerald-600">Rp65.000<span class="text-sm font-normal text-slate-400">/malam</span></p>
+            <p class="text-slate-400 font-semibold mb-2 uppercase text-xs tracking-wider">Weekend</p>
+            <p class="text-3xl md:text-4xl font-extrabold text-emerald-600">Rp65.000<span class="text-xs font-normal text-slate-400 block mt-1">/malam</span></p>
           </div>
         </div>
-
-        <ul class="text-left space-y-4 text-sm text-slate-600 mb-10 max-w-md mx-auto">
-          <li class="flex items-center gap-3"><span class="text-emerald-500 font-bold">✓</span> 1 kandang 1 ekor, AC 24 jam</li>
+ 
+        <ul class="text-left space-y-4 text-sm text-slate-600 mb-10">
+          <li class="flex items-center gap-3"><span class="text-emerald-500 font-bold">✓</span> 1 kandang 1 ekor, AC 24 jam, CCTV</li>
           <li class="flex items-center gap-3"><span class="text-emerald-500 font-bold">✓</span> Makan 2-3x + litter cleaning harian</li>
-          <li class="flex items-center gap-3"><span class="text-emerald-500 font-bold">✓</span> Playtime harian (Momo & Morry approved)</li>
-          <li class="flex items-center gap-3"><span class="text-emerald-500 font-bold">✓</span> Daily report foto/video</li>
+          <li class="flex items-center gap-3"><span class="text-emerald-500 font-bold">✓</span> Playtime harian + daily report foto/video</li>
+          <li class="flex items-center gap-3"><span class="text-emerald-500 font-bold">✓</span> Akses dokter hewan bila ada gejala</li>
         </ul>
-
-        <a href="#booking" class="block w-full bg-emerald-500 text-white py-4 rounded-xl font-bold hover:bg-emerald-600 transition-colors">
+ 
+        <a href="https://wa.me/" data-wa target="_blank" rel="noopener" class="block w-full bg-emerald-500 text-white py-4 rounded-xl font-bold hover:bg-emerald-600 transition-colors shadow-lg shadow-emerald-500/20 text-center">
           Booking via WhatsApp
         </a>
       </div>
     </div>
   </section>
-
-  <!-- Requirements (Syarat Masuk) -->
-  <section id="syarat" class="py-20 px-6 md:px-12 max-w-4xl mx-auto">
-    <div class="bg-white border border-slate-200 rounded-3xl p-10 flex flex-col md:flex-row gap-10 items-center">
+ 
+  <!-- Requirements -->
+  <section id="syarat" class="py-24 px-6 md:px-12 max-w-5xl mx-auto">
+    <div class="bg-white border border-slate-200 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-10 items-center shadow-sm">
       <div class="flex-1 text-center md:text-left">
-        <h4 class="text-slate-500 font-semibold tracking-wider text-sm mb-2 uppercase">Syarat Masuk</h4>
+        <h4 class="text-slate-400 font-bold tracking-widest text-xs mb-3 uppercase">Syarat Masuk</h4>
         <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Kami melindungi kucingmu dari kucing lain</h3>
-        <p class="text-slate-600 text-sm">Karena itu semua tamu wajib memenuhi syarat kesehatan yang ketat.</p>
+        <p class="text-slate-600 text-sm leading-relaxed">Kami melindungi kucingmu dari kucing lain. Karena itu semua tamu wajib memenuhi standar kesehatan di samping.</p>
       </div>
-      <div class="flex-1 w-full grid grid-cols-2 gap-4">
-        <div class="bg-slate-50 p-4 rounded-xl flex items-start gap-3">
-          <span class="text-emerald-500">✓</span>
+      <div class="flex-1 w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
+          <span class="text-emerald-500 font-bold">✓</span>
           <p class="text-sm font-semibold text-slate-800">Vaksin lengkap & aktif</p>
         </div>
-        <div class="bg-slate-50 p-4 rounded-xl flex items-start gap-3">
-          <span class="text-emerald-500">✓</span>
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
+          <span class="text-emerald-500 font-bold">✓</span>
           <p class="text-sm font-semibold text-slate-800">Bebas kutu & jamur</p>
         </div>
-        <div class="bg-slate-50 p-4 rounded-xl flex items-start gap-3">
-          <span class="text-emerald-500">✓</span>
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
+          <span class="text-emerald-500 font-bold">✓</span>
           <p class="text-sm font-semibold text-slate-800">Kondisi sehat saat masuk</p>
         </div>
-        <div class="bg-slate-50 p-4 rounded-xl flex items-start gap-3">
-          <span class="text-emerald-500">✓</span>
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
+          <span class="text-emerald-500 font-bold">✓</span>
           <p class="text-sm font-semibold text-slate-800">Usia minimal 3 bulan</p>
         </div>
       </div>
     </div>
   </section>
-
+ 
   <!-- Booking Steps -->
-  <section class="py-20 px-6 md:px-12 bg-slate-900 text-white text-center">
+  <section class="py-24 px-6 md:px-12 bg-slate-900 text-white text-center">
     <div class="max-w-4xl mx-auto">
-      <h4 class="text-emerald-400 font-semibold tracking-wider text-sm mb-3 uppercase">Gampang & Jelas</h4>
-      <h3 class="text-3xl md:text-4xl font-extrabold mb-6">Cara booking dalam 4 langkah</h3>
-      <p class="text-slate-400 mb-16">Nggak ribet. Semua lewat WhatsApp — dari tanya tanggal sampai anabul check-in.</p>
-
-      <div class="space-y-6 text-left relative before:absolute before:inset-0 before:ml-7 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-slate-700">
-        
-        <!-- Step 1 -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-14 h-14 rounded-full border-4 border-slate-900 bg-emerald-500 text-white font-bold text-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-xl z-10">1</div>
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-slate-800 p-6 rounded-2xl shadow">
-            <h5 class="font-bold text-lg mb-2">Chat via WhatsApp</h5>
-            <p class="text-sm text-slate-400">Tanya ketersediaan tanggal & ceritakan kebutuhan kucingmu. Kami bantu pilihkan paket yang pas.</p>
-          </div>
+      <h4 class="text-emerald-400 font-bold tracking-widest text-xs mb-3 uppercase">Gampang & Jelas</h4>
+      <h3 class="text-3xl md:text-4xl font-extrabold mb-4">Cara booking dalam 4 langkah</h3>
+      <p class="text-slate-400 mb-16">Nggak ribet. Semua lewat WhatsApp — dari tanggal sampai kumpul kucingmu check-in.</p>
+ 
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+        <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700/60 relative">
+          <div class="text-emerald-400 font-black text-2xl mb-4">01</div>
+          <h5 class="font-bold text-lg mb-2">Chat via WhatsApp</h5>
+          <p class="text-sm text-slate-400 leading-relaxed">Tanya ketersediaan tanggal & ceritakan kebutuhan kucingmu. Kami bantu pilih paket yang pas.</p>
         </div>
-
-        <!-- Step 2 -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-14 h-14 rounded-full border-4 border-slate-900 bg-slate-700 text-white font-bold text-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-xl z-10">2</div>
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-slate-800 p-6 rounded-2xl shadow">
-            <h5 class="font-bold text-lg mb-2">Konfirmasi & data kucing</h5>
-            <p class="text-sm text-slate-400">Kirim tanggal check-in/out, nama & kondisi kucing, status vaksin, dan foto buku vaksin.</p>
-          </div>
+        <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700/60 relative">
+          <div class="text-emerald-400 font-black text-2xl mb-4">02</div>
+          <h5 class="font-bold text-lg mb-2">Konfirmasi & data kucing</h5>
+          <p class="text-sm text-slate-400 leading-relaxed">Kirim tanggal check-in/out, nama & kondisi kucing, status vaksin, plus add-on antar-jemput / grooming kalau perlu.</p>
         </div>
-
-        <!-- Step 3 -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-14 h-14 rounded-full border-4 border-slate-900 bg-slate-700 text-white font-bold text-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-xl z-10">3</div>
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-slate-800 p-6 rounded-2xl shadow">
-            <h5 class="font-bold text-lg mb-2">DP untuk kunci slot</h5>
-            <p class="text-sm text-slate-400">Amankan kamar dengan DP. Pelunasan dilakukan saat check-out.</p>
-          </div>
+        <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700/60 relative">
+          <div class="text-emerald-400 font-black text-2xl mb-4">03</div>
+          <h5 class="font-bold text-lg mb-2">DP untuk kunci slot</h5>
+          <p class="text-sm text-slate-400 leading-relaxed">Amankan kamar dengan DP — penting terutama saat peak/libur. Pelunasan saat check-out.</p>
         </div>
-
-        <!-- Step 4 -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-14 h-14 rounded-full border-4 border-slate-900 bg-slate-700 text-white font-bold text-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-xl z-10">4</div>
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-slate-800 p-6 rounded-2xl shadow">
-            <h5 class="font-bold text-lg mb-2">Antar sendiri atau dijemput</h5>
-            <p class="text-sm text-slate-400">Check-in langsung di lokasi kami, atau pakai layanan antar-jemput berbayar.</p>
-          </div>
+        <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700/60 relative">
+          <div class="text-emerald-400 font-black text-2xl mb-4">04</div>
+          <h5 class="font-bold text-lg mb-2">Antar sendiri atau dijemput</h5>
+          <p class="text-sm text-slate-400 leading-relaxed">Check-in langsung di lokasi kami, atau pakai layanan antar-jemput. Selama menginap, kamu dapat update foto/video harian.</p>
         </div>
       </div>
-
+ 
       <div class="mt-16">
-        <a href="#booking" class="bg-emerald-500 text-white px-8 py-4 rounded-full font-bold hover:bg-emerald-600 transition-colors inline-block">
+        <a href="https://wa.me/" data-wa target="_blank" rel="noopener" class="bg-emerald-500 text-white px-10 py-4 rounded-full font-bold hover:bg-emerald-600 transition-colors inline-block shadow-lg shadow-emerald-500/20">
           Mulai booking via WhatsApp
         </a>
       </div>
     </div>
   </section>
-
+ 
   <!-- FAQ Section -->
-  <section id="faq" class="py-20 px-6 md:px-12 max-w-3xl mx-auto">
-    <div class="text-center mb-12">
+  <section id="faq" class="py-24 px-6 md:px-12 max-w-3xl mx-auto">
+    <div class="text-center mb-16">
       <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Pertanyaan yang sering muncul</h3>
       <p class="text-slate-600">Yang biasanya kamu tanyain sebelum mutusin nitip.</p>
     </div>
-
+ 
     <div class="space-y-4">
-      <details class="group bg-white border border-slate-200 rounded-xl p-6 cursor-pointer">
+      <details class="group bg-white border border-slate-200 rounded-2xl p-6 cursor-pointer shadow-sm">
         <summary class="flex justify-between items-center font-bold text-slate-900 text-lg">
           Kucingku gampang stres. Aman nggak di sini?
-          <span class="transition group-open:rotate-180">
-            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+          <span class="transition group-open:rotate-180 text-slate-400">
+            <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
           </span>
         </summary>
         <p class="text-slate-600 mt-4 leading-relaxed text-sm">
-          Justru itu alasan kami pakai kebijakan 1 kandang 1 ekor dan sekat solid antar-unit. Kucingmu punya teritori sendiri, tanpa kontak paksa dengan kucing lain.
+          Justru itu alasan kami pakai kebijakan 1 kandang 1 ekor dan sekat solid antar-unit. Kucingmu punya teritori sendiri, tanpa kontak paksa dengan kucing lain. Ada perch untuk memanjat dan hiding box untuk bersembunyi — dua hal yang bikin kucing merasa aman.
         </p>
       </details>
-
-      <details class="group bg-white border border-slate-200 rounded-xl p-6 cursor-pointer">
+ 
+      <details class="group bg-white border border-slate-200 rounded-2xl p-6 cursor-pointer shadow-sm">
         <summary class="flex justify-between items-center font-bold text-slate-900 text-lg">
           Kalau kucingku sakit di tengah masa titip, gimana?
-          <span class="transition group-open:rotate-180">
-            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+          <span class="transition group-open:rotate-180 text-slate-400">
+            <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
           </span>
         </summary>
         <p class="text-slate-600 mt-4 leading-relaxed text-sm">
-          Kami memantau kondisi setiap hari. Jika ada gejala, kami akan langsung menghubungi kamu dan memindahkan kucing ke area isolasi sementara sebelum dibawa ke klinik terdekat atas persetujuanmu.
+          Ada dokter hewan full-time on-site. Begitu muncul gejala, kucingmu langsung diperiksa dan kami kamu hubungi. Kalau perlu, kami pindahkan ke zona isolasi.
         </p>
       </details>
-
-      <details class="group bg-white border border-slate-200 rounded-xl p-6 cursor-pointer">
+ 
+      <details class="group bg-white border border-slate-200 rounded-2xl p-6 cursor-pointer shadow-sm">
         <summary class="flex justify-between items-center font-bold text-slate-900 text-lg">
-          Bawa makanan sendiri atau dari pet hotel?
-          <span class="transition group-open:rotate-180">
-            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+          Syarat vaksinnya apa aja?
+          <span class="transition group-open:rotate-180 text-slate-400">
+            <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
           </span>
         </summary>
         <p class="text-slate-600 mt-4 leading-relaxed text-sm">
-          Untuk mencegah masalah pencernaan karena ganti makanan mendadak, kami mewajibkan owner membawa makanan kucingnya sendiri sesuai porsi selama menginap.
+          Vaksin lengkap dan masih berlaku, bebas kutu & jamur, sehat, minimal usia 3 bulan. Ini bukan buat nyulitkan, tapi biar bikin kucingmu aman dari kucing lain yang masuk.
         </p>
       </details>
     </div>
   </section>
-
-  <!-- Footer CTA & Info -->
+ 
+  <!-- Footer -->
   <footer class="bg-slate-900 pt-16 pb-8 px-6 md:px-12 text-white border-t-4 border-emerald-500">
     <div class="max-w-7xl mx-auto">
-      <!-- Upper Footer (CTA) -->
       <div class="bg-slate-800 rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-8 mb-16 border border-slate-700">
         <div>
-          <span class="bg-red-500/20 text-red-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Slot Terbatas</span>
+          <span class="bg-amber-400/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Slot Terbatas</span>
           <h3 class="text-2xl md:text-3xl font-bold mb-2">Kapasitas kami nyata terbatas</h3>
-          <p class="text-slate-400 text-sm">Unit standar jumlahnya sedikit karena dirancang kedap dan aman. Saat musim libur, slot cepat penuh.</p>
+          <p class="text-slate-400 text-sm">Unit sedikit karena dirancang kedap. Saat musim libur, slot cepat penuh.</p>
         </div>
-        <a href="#booking" class="bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-emerald-600 transition-colors shrink-0 text-center w-full md:w-auto">
+        <a href="https://wa.me/" data-wa target="_blank" rel="noopener" class="bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-emerald-600 transition-colors shrink-0 text-center w-full md:w-auto">
           Booking via WhatsApp
         </a>
       </div>
-
-      <!-- Lower Footer (Links) -->
+ 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         <div class="md:col-span-2">
-          <div class="flex items-center gap-2 mb-4">
-            <span class="text-2xl text-emerald-500">🛡️</span>
-            <h1 class="text-xl font-bold text-white tracking-tight">Mozzy<span class="font-normal text-slate-400">Care</span></h1>
-          </div>
+          <a href="#" class="flex items-center gap-3 mb-4" aria-label="Mozzy Care"><svg class="w-10 h-10 shrink-0" aria-hidden="true"><use href="#logo-mark"/></svg><span class="leading-none"><span class="block text-xl font-extrabold tracking-tight text-white">Mozzy<span class="text-emerald-400">Care</span></span><span class="block text-[10px] font-semibold tracking-[0.2em] uppercase mt-1.5 text-slate-500">Cat Hotel &amp; Boarding</span></span></a>
           <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-            Bagian dari ekosistem Mozzy Pet Care. Hotel & penitipan kucing premium dengan standar operasional ketat di Jakarta.
+            Hotel & penitipan kucing premium dengan standar operasional ketat.
           </p>
         </div>
         
@@ -339,13 +312,13 @@
             <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
           </ul>
         </div>
-
+ 
         <div>
           <h4 class="font-bold mb-4">Kontak & Lokasi</h4>
           <ul class="space-y-3 text-sm text-slate-400">
             <li class="flex items-start gap-2">
               <span>📍</span>
-              <span>Kawasan Sudirman, Jakarta Selatan</span>
+              <span>Sudirman, Jakarta Selatan</span>
             </li>
             <li class="flex items-start gap-2">
               <span>🕒</span>
@@ -354,18 +327,25 @@
           </ul>
         </div>
       </div>
-
+ 
       <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
         <p>&copy; 2026 Sutan Lutfi - Mozzy Pet Care. Hak cipta dilindungi.</p>
-        <p>Penitipan kucing dengan desain aman & bersih.</p>
+        <p>Dibuat dengan Tailwind CSS.</p>
       </div>
     </div>
   </footer>
-
+ 
   <!-- Floating WhatsApp Button -->
-  <a href="#booking" class="fixed bottom-6 right-6 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 hover:scale-110 transition-transform z-50 flex items-center gap-2">
+  <a href="https://wa.me/" data-wa target="_blank" rel="noopener" class="fixed bottom-6 right-6 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 hover:scale-110 transition-transform z-50 flex items-center justify-center">
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-    Chat Kami
   </a>
+  <script>
+    // Isi nomor WhatsApp format internasional tanpa + atau 0, contoh: 6281234567890
+    const WA_NUMBER = "";
+    const WA_TEXT = "Halo Mozzy Care, aku mau tanya ketersediaan kamar untuk kucingku.";
+    document.querySelectorAll("[data-wa]").forEach(a => {
+      a.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_TEXT)}`;
+    });
+  </script>
 </body>
 </html>
