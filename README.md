@@ -1,87 +1,62 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="MomozzyCare Cat Hotel & Boarding Banner" width="100%">
-</p>
+<div align="center">
+  <img src="final-project/public/momozzy-hero.svg" alt="MomozzyCare Cat Hotel & Boarding" width="100%">
+</div>
 
 <h1 align="center">MomozzyCare — Cat Hotel & Boarding</h1>
 
 <p align="center">
-  <strong>Platform web informasi, simulasi biaya, dan reservasi penitipan kucing eksklusif di Sudirman, Jakarta Selatan.</strong>
+  <strong>Website layanan penitipan dan perawatan kucing eksklusif di Sudirman, Jakarta Selatan.</strong><br/>
+  Dibangun dengan pendekatan antarmuka <em>mint-emerald</em> yang menenangkan, informatif, dan responsif.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-10B981?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/HTML5-022C22?style=for-the-badge&logo=html5&logoColor=6EE7B7" alt="HTML5" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=022C22" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Status-Active_Development-059669?style=for-the-badge" alt="Status" />
 </p>
 
 <p align="center">
-  <a href="#tentang-proyek">Tentang</a> •
-  <a href="#keunggulan--fitur-utama">Fitur Utama</a> •
-  <a href="#arsitektur-alur-reservasi">Alur Reservasi</a> •
-  <a href="#design-system">Design System</a> •
-  <a href="#instalasi-lokal">Instalasi</a> •
-  <a href="#roadmap-pengembangan">Roadmap</a>
+  <a href="#ringkasan-proyek">Ringkasan</a> •
+  <a href="#fitur--section-utama">Fitur Utama</a> •
+  <a href="#alur-pengalaman-pengguna">Alur Pengguna</a> •
+  <a href="#sistem-desain">Sistem Desain</a> •
+  <a href="#menjalankan-di-lokal">Instalasi</a>
 </p>
 
 ---
 
-## Tentang Proyek
+## Ringkasan Proyek
 
-**MomozzyCare** dirancang untuk memberikan rasa tenang bagi pemilik kucing (*cat parents*) saat harus menitipkan anabul selama bepergian. Dengan prinsip perawatan **1 kamar 1 ekor** dan **nol kontak silang**, antarmuka website ini memadukan tipografi editorial yang hangat dengan nuansa *mint-emerald* yang menenangkan.
-
-Pengunjung dapat menelusuri standar kebersihan ruang menginap, jadwal perawatan harian, rincian paket harga, syarat vaksinasi, hingga menghitung estimasi biaya menginap secara instan sebelum terhubung langsung dengan admin melalui WhatsApp.
+**MomozzyCare** dirancang untuk menjawab kekhawatiran *cat parents* saat harus meninggalkan kucing kesayangan bepergian. Mengusung konsep **1 kamar 1 ekor** dan **nol kontak silang**, platform ini menyajikan transparansi fasilitas kamar, rutinitas perawatan harian, persyaratan kesehatan, serta simulasi estimasi biaya menginap sebelum pengguna melakukan pemesanan via WhatsApp.
 
 ---
 
-## Keunggulan & Fitur Utama
+## Fitur & Section Utama
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🏠 1 Kamar 1 Ekor (Nol Kontak Silang)</h3>
-      <p>Setiap kucing menempati suite privat terpisah guna mencegah stres teritorial dan meminimalkan risiko penularan penyakit antar-hewan.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>📸 Update Foto & Video Harian</h3>
-      <p>Pemilik menerima laporan rutin kondisi makan, aktivitas bermain, dan kebersihan <em>litter box</em> anabul setiap hari.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🧮 Kalkulator Estimasi Biaya</h3>
-      <p>Simulasi otomatis total biaya penitipan berdasarkan pilihan tipe kamar (<em>suite</em>), jumlah anabul, dan durasi menginap.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>💬 Direct WhatsApp Booking</h3>
-      <p>Integrasi tombol aksi cepat (<em>Hero CTA</em> & <em>Floating Action Button</em>) untuk konsultasi jadwal dan konfirmasi reservasi.</p>
-    </td>
-  </tr>
-</table>
-
-### Navigasi Halaman
-* **Kenapa Kami** — Penjelasan standar keamanan, sanitasi ruangan, dan protokol *zero cross-contact*.
-* **Sehari di Sini** — Linimasa rutinitas harian anabul dari pagi hingga malam.
-* **Harga** — Transparansi tarif per malam beserta fasilitas tiap kategori kamar.
-* **Syarat** — Daftar kriteria kesehatan wajib (bebas kutu/jamur, sehat klinis, dan buku vaksin).
-* **FAQ** — Pusat jawaban pertanyaan umum seputar pakan pribadi, obat khusus, dan jam antar-jemput.
+| Section | Fungsi Utama |
+| :--- | :--- |
+| **Hero & Quick CTA** | Pengenalan layanan dengan akses langsung ke **Booking via WhatsApp** dan **Hitung Estimasi Biaya**. |
+| **Kenapa Kami** | Sorotan protokol **1 kamar 1 ekor**, ruangan bebas kontak silang, dan laporan foto/video harian. |
+| **Sehari di Sini** | Linimasa aktivitas harian anabul mulai dari jadwal makan, sesi bermain, sanitasi kandang, hingga pengecekan rutin. |
+| **Harga & Estimasi** | Daftar paket menginap per malam dilengkapi kalkulator simulasi biaya berdasarkan durasi menginap. |
+| **Syarat & FAQ** | Panduan kriteria kesehatan wajib (bebas kutu/jamur, sehat klinis, vaksin) serta tanya-jawab seputar penitipan. |
+| **Floating WhatsApp** | Tombol konsultasi cepat yang selalu mudah dijangkau di sudut kanan bawah layar. |
 
 ---
 
-## Arsitektur Alur Reservasi
+## Alur Pengalaman Pengguna
 
 ```mermaid
 flowchart LR
-    A[Cat Parent Mengakses Web] --> B{Eksplorasi Layanan}
-    B --> C[Cek Fasilitas & Jadwal Harian]
-    B --> D[Baca Syarat & FAQ]
-    B --> E[Hitung Estimasi Biaya]
-    C & D & E --> F[Klik Booking via WhatsApp]
-    F --> G[Konfirmasi Ketersediaan Suite]
-    G --> H[Check-in & Update Foto/Video Harian]
+    A[Pengunjung Masuk] --> B[Cek Keunggulan & Jadwal Harian]
+    B --> C[Tinjau Paket Harga & Syarat]
+    C --> D[Hitung Estimasi Biaya]
+    D --> E[Klik Booking via WhatsApp]
+    E --> F[Konfirmasi Suite & Check-in]
 
     style A fill:#ecfdf5,stroke:#10b981,stroke-width:2px,color:#022c22
-    style E fill:#d1fae5,stroke:#059669,stroke-width:2px,color:#022c22
-    style F fill:#10b981,stroke:#047857,stroke-width:2px,color:#ffffff
-    style H fill:#022c22,stroke:#10b981,stroke-width:2px,color:#ecfdf5
+    style D fill:#d1fae5,stroke:#059669,stroke-width:2px,color:#022c22
+    style E fill:#10b981,stroke:#047857,stroke-width:2px,color:#ffffff
+    style F fill:#022c22,stroke:#10b981,stroke-width:2px,color:#ecfdf5
